@@ -5,13 +5,13 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./small_office/scene.gltf");
+  const computer = useGLTF("./home_office/scene.gltf");
 
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
       <spotLight
-        position={[-10, 50, 10]}
+        position={[10, 50, 50]}
         angle={0.12}
         penumbra={1}
         intensity={1}
@@ -21,9 +21,9 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 1 : 1.3}
-        position={isMobile ? [1, 1, -2] : [1, -1.3, -1.5]}
-        rotation={[-0.07, 0.3, 0.04]}
+        scale={isMobile ? 1 : 2.6}
+        position={isMobile ? [1, 1, -2] : [0, -2.4, 2.3]}
+        rotation={[-0.03, 2, 0.0]}
       />
     </mesh>
   );
@@ -65,9 +65,9 @@ const ComputersCanvas = () => {
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI/1.9}
-          minPolarAngle={Math.PI /2.1}
-          minAzimuthAngle={ -Math.PI/10} // Limit the camera's rotation to the left
-          maxAzimuthAngle={Math.PI / 4} // Limit the camera's rotation to the right
+          minPolarAngle={Math.PI /2.3}
+          minAzimuthAngle={ -Math.PI/600} // Limit the camera's rotation to the left
+          maxAzimuthAngle={Math.PI / 2} // Limit the camera's rotation to the right
         
         />
         <Computers isMobile={isMobile} />

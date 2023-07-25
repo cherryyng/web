@@ -5,9 +5,9 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-full mx-auto`}> 
+    <section className={`relative w-full h-screen mx-auto`}> 
       <div
-        className={`absolute inset-0 top-[110px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[160px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#408C69]' /> 
@@ -15,14 +15,18 @@ const Hero = () => {
         </div>
     
 
-        <div>
+        <div className = "ml-auto px-">
           <h1 className={`${styles.heroHeadText} text-black `}>
-            Hi, I'm <span className='text-[#408C69]'>Cherry</span>
+            Hi! I'm <br></br><span className='text-[#408C69]'>Cherry</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-black`}>
-            computer science and finance student <br className='sm:block hidden' />
-            with lots of love in data, fintech, web and app dev!
-          </p>
+          <div >
+            <p className={`${styles.heroSubText} ml-auto mt-2 text-black`}>
+              computer science  
+              
+              & finance student <br className='sm:block hidden' />
+              with lots of love in data, fintech, <br></br> web dev and app dev!
+            </p>
+          </div>
         </div>
       </div>
 
