@@ -24,7 +24,8 @@ const Hero = () => {
               computer science  
               
               & finance student <br className='sm:block hidden' />
-              with lots of love in data, fintech, <br></br> web dev and app dev!
+              with lots of love in data, fintech, <br></br> web dev and app dev !
+
             </p>
           </div>
         </div>
