@@ -12,6 +12,13 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
+/* Add this in your CSS file */
+body {
+  background-image: url('/src/assets/herobg.png');
+  background-repeat: repeat-y; /* This will repeat the background image vertically */
+  background-size: cover; /* Adjust as needed, could be 'auto' to maintain original size */
+}
+
 
 .hash-span {
   margin-top: -100px;
@@ -20,26 +27,26 @@
 }
 
 .black-gradient {
-  background: #000000; /* fallback for old browsers */
+  background: #9e5252; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #434343,
-    #000000
+    #817676
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
     #434343,
-    #000000
+    #463e3e
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .green-gradient {
   background: #408C69;
-  background: linear-gradient(-90deg, #408C69 0%, rgba(51, 80, 54, 0) 100%);
+  background: linear-gradient(-90deg, #408C69 0%, #408C69 100%);
   background: -webkit-linear-gradient(
     -90deg,
     #408C69 0%,
-    rgba(51, 80, 54, 0) 100%
+    #408C69 100%
   );
 }
 
